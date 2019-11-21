@@ -9,6 +9,9 @@ export function init() {
 }
 
 function onLoad() {
+  if(navigator.serviceWorker){
+    navigator.serviceWorker.register('sw.js');
+  }
   render();
 }
 
